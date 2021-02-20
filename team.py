@@ -14,3 +14,8 @@ class Team:
     # print funckija za igraci vo timot
 
     #sort funkcija i da printa
+
+    def printPlayersByPPG(self):
+        sortedLista =  sorted(self.__lista_igraci,key=lambda x: x.getPPG(),reverse = True)
+        for item in sortedLista:
+            print(item.printaj_igraci())

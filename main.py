@@ -1,4 +1,5 @@
 from igrac import *
+from team import *
 from random import shuffle
 
 
@@ -38,7 +39,10 @@ i10 = Igrac("Anthony","Davis","3","C",26.1)
 
 lista_igraci = [i1,i2,i3,i4,i5,i6,i7,i8,i9,i10]
 
-for item in lista_igraci:
-    item.printaj_igraci()
+# for item in lista_igraci:
+#     item.printaj_igraci()
+
+
+
 
 ### add players ###
