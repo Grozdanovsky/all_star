@@ -1,6 +1,8 @@
 from igrac import *
 import random
-from team import Team
+from team import *
+
+
 
 i1 = Igrac("Bradley","Beal","3","SG",32.8)
 
@@ -23,17 +25,6 @@ i9 = Igrac("Giannis","Antetokounmpo","34","PF",28)
 i10 = Igrac("Anthony","Davis","3","C",26.1)
 
 
-
-
-### Functions ###
-
-
-
-
-
-
-
-
 def add_players(lista_na_igraci):
 
     random.shuffle(lista_na_igraci)
@@ -51,21 +42,12 @@ def add_players(lista_na_igraci):
     return [tim1,tim2]
 
 
-
-
-
 ### MAIN ###
 
 lista_igraci = [i1,i2,i3,i4,i5,i6,i7,i8,i9,i10]
 
-# for item in lista_igraci:
-#     item.printaj_igraci()
 
 timovi = add_players(lista_igraci)
-
-
-
-
 
 t1 = Team("West",timovi[0])
 
@@ -74,6 +56,9 @@ t2 = Team("East",timovi[1])
 t1.printaj_tim()
 t2.printaj_tim()
 
+t1.printPlayersByPPG()
+
+t2.printPlayersByPPG()
 
 
-### add players ###
+

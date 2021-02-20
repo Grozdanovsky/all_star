@@ -13,4 +13,8 @@ class Team:
         self.printaj_igraci()
 
 
-    #sort funkcija i da printa
+    def printPlayersByPPG(self):
+        sortedLista =  sorted(self.__lista_igraci,key=lambda x: x.getPPG(),reverse = True)
+        for item in sortedLista:
+           item.printaj_igraci()
+
