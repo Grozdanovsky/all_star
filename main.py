@@ -1,5 +1,5 @@
 from igrac import *
-
+from random import shuffle
 
 
 i1 = Igrac("Bradley","Beal","3","SG",32.8)
@@ -22,9 +22,23 @@ i9 = Igrac("Giannis","Antetokounmpo","34","PF",28)
 
 i10 = Igrac("Anthony","Davis","3","C",26.1)
 
+### Functions ###
+
+
+
+
+
+
+
+### shuffle i dodavanje igraci (prima t1 i t2)
+### def add players ###
+
+
+### MAIN ###
 
 lista_igraci = [i1,i2,i3,i4,i5,i6,i7,i8,i9,i10]
 
 for item in lista_igraci:
     item.printaj_igraci()
 
+### add players ###
