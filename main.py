@@ -12,8 +12,18 @@ i4 = Igrac("Kyrie","Irving","11","PG",27)
 
 i5 = Igrac("LeBron","James","23","SF",26)
 
+i6 = Igrac("Luka","Doncic","77","SF",29)
 
-lista_igraci = [i1,i2,i3,i4,i5]
+i7 = Igrac("Trae","Young","11","PG",27)
+
+i8 = Igrac("Kawhi","Leonard","2","SG",26)
+
+i9 = Igrac("Giannis","Antetokounmpo","34","PF",28)
+
+i10 = Igrac("Anthony","Davis","3","C",26.1)
+
+
+lista_igraci = [i1,i2,i3,i4,i5,i6,i7,i8,i9,i10]
 
 for item in lista_igraci:
     item.printaj_igraci()
