@@ -4,13 +4,13 @@ class Team:
         self.__ime = ime
         self.__lista_igraci = lista_igraci
 
+    def printaj_igraci(self):
+        for item in self.__lista_igraci:
+            item.printaj_igraci()
 
     def printaj_tim(self):
-        print(f"{self.__ime}\n Players:\n{self.__lista_igraci}")
+        print(f"{self.__ime}\n\nPlayers:\n")
+        self.printaj_igraci()
 
-
-    # print funckija za timot
-
-    # print funckija za igraci vo timot
 
     #sort funkcija i da printa

@@ -1,6 +1,6 @@
 from igrac import *
-from random import shuffle
-
+import random
+from team import Team
 
 i1 = Igrac("Bradley","Beal","3","SG",32.8)
 
@@ -22,6 +22,9 @@ i9 = Igrac("Giannis","Antetokounmpo","34","PF",28)
 
 i10 = Igrac("Anthony","Davis","3","C",26.1)
 
+
+
+
 ### Functions ###
 
 
@@ -30,15 +33,47 @@ i10 = Igrac("Anthony","Davis","3","C",26.1)
 
 
 
-### shuffle i dodavanje igraci (prima t1 i t2)
-### def add players ###
+
+def add_players(lista_na_igraci):
+
+    random.shuffle(lista_na_igraci)
+    tim1 = []
+    tim2 = []
+    brojac = 1
+    for item in lista_na_igraci:
+        if brojac %2 == 0:
+            tim1.append(item)
+            brojac += 1
+        else:
+            tim2.append(item)
+            brojac += 1
+
+    return [tim1,tim2]
+
+
+
 
 
 ### MAIN ###
 
 lista_igraci = [i1,i2,i3,i4,i5,i6,i7,i8,i9,i10]
 
-for item in lista_igraci:
-    item.printaj_igraci()
+# for item in lista_igraci:
+#     item.printaj_igraci()
+
+timovi = add_players(lista_igraci)
+
+
+
+
+
+t1 = Team("West",timovi[0])
+
+t2 = Team("East",timovi[1])
+
+t1.printaj_tim()
+t2.printaj_tim()
+
+
 
 ### add players ###
