@@ -7,3 +7,6 @@ class Igrac:
         self.__broj = broj
         self.__pozicija = pozicija
         self.__ppg = ppg
+
+    def getPPG(self):
+        return self.__ppg

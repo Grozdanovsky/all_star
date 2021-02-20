@@ -1,3 +1,3 @@
+from igrac import *
+#MAIN
 
-
-#
