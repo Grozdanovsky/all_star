@@ -1,6 +1,7 @@
 from igrac import *
 
 
+
 i1 = Igrac("Bradley","Beal","3","SG",32.8)
 
 i2 = Igrac("Stephen","Curry","30","PG",29.9)
@@ -16,3 +17,4 @@ lista_igraci = [i1,i2,i3,i4,i5]
 
 for item in lista_igraci:
     item.printaj_igraci()
+

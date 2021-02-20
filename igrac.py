@@ -9,5 +9,10 @@ class Igrac:
         self.__ppg = ppg
 
 
+
     def printaj_igraci(self):
         print(f"Ime: {self.__ime}\nPrezime: {self.__prezime}\nBroj: {self.__broj}\nPozicija: {self.__pozicija}\nPPG: {self.__ppg}\n")
+
+    def getPPG(self):
+        return self.__ppg
+
